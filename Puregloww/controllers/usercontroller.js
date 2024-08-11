@@ -447,7 +447,7 @@ const newproducts = async (req, res) => {
     // Fetch the latest 10 products sorted by createdAt in descending order
     const products = await Products.find().sort({ createdAt: -1 }).limit(9);
 
-    console.log("kkkkk");
+    console.log("kkkkkkkkk");
     console.log(products);
 
     uniqueCategories = await Products.distinct("category");
